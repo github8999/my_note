@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<!-- 求除了自己的所有兄弟节点。 -->
+	<ul class="list">
+		<li class="li1">li1</li>
+		<li class="li2">li2</li>
+		<li class="li3">li3</li>
+		<li class="li4">li4</li>
+		<li class="li5">li5</li>
+		<li class="li6">li6</li>
+	</ul>
+	<script type="text/javascript">
+		<script type="text/javascript">
+			var li3Ele = document.getElementsByClassName("li3")[0];
+			AllBro(li3Ele);
+			//这是一条注释
+			function AllBro(node){
+				var pNode = node.parentNode;
+				var childNodes = pNode.children;
+				// console.log(childNodes);
+				for(var i = 0 ; i < childNodes.length ;i++){
+					//判断ul下的子节点不等于li3,且为元素节点的时候:nodeType==1
+					if(node!=childNodes[i] && childNodes[i].nodeType == 1){
+						console.log(childNodes[i]);
+					}
+				}
+			}
+		</script>
+	</script>
+</body>
+</html>

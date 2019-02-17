@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var num1 = 0;
+			var num2 = 0;
+			num1 = prompt("请输入你要比较的值(输入单个) num1:");
+			num2 = prompt("请输入你要比较的值(输入单个) num2:");
+			num3 = prompt("请输入你要比较的值(输入单个) num3:");
+			var max = maxTwo();
+			alert("最大值为: "+maxTwo(num1,num2,num3));
+			
+			function maxTwo(num1,num2,num3){
+				if(num3==""){
+				return Math.max(num1,num2);
+				}else{
+					Number(num3);
+					return Math.max(num1,num2,num3);
+				}
+			}
+		</script>
+	</body>
+</html>

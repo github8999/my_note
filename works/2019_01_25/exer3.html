@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			<!-- 找到数组中每个字母出现的次数["c","a","z","a","a"]   js没有map -->
+			var strArr = ["c","a","z","a","a","z"];
+			sameEle(strArr);
+			
+			function sameEle(arr){
+				var newArr = arr;
+				for(var i = 0 ; i < arr.length-1 ; i++ ){
+					var count = 1;
+					for(var j = i+1 ; j<arr.length;j++){
+						if(arr[i]==arr[j]){
+							count++;
+							arr.splice(j,1);
+							j--;
+						}
+					}
+					console.log(arr[i]+" 出现"+count+"次.");
+					count=1;
+				}	
+			}
+			
+		
+			
+		</script>
+		
+	</body>
+</html>

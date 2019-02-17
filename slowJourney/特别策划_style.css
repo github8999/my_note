@@ -1,0 +1,217 @@
+/*550 250 top70
+350 245*/
+/*页面的内容部分*/
+.container{
+	width: 100%;
+	height: 1103px;
+	overflow: hidden;
+}
+.container-c{
+	margin:0 auto;
+	width: 1200px;
+	height: 100%;
+}
+.container-c .tbchua{
+	width: 100%;
+	height: 100%;
+
+}
+.container-c .tbchua .chua-item{
+	float:left;
+	width: 550px;
+	height: 250px;
+	margin-top: 70px;
+}
+
+.container-c .tbchua .chua-item1,
+.container-c .tbchua .chua-item3,
+.container-c .tbchua .chua-item5{
+	margin-right:100px;
+}
+
+.container-c .chua-item .left-img{
+	float: left;
+	display: block;
+	width: 350px;
+	height: 250px;
+}
+.container-c .chua-item .left-img1{
+	background: url(img/特别策划-云南.jpg) no-repeat center;
+	background-size: 350px auto;
+	
+}
+.container-c .chua-item .left-img2{
+	background: url(img/特别策划-成都.jpg) no-repeat center;
+	background-size: 350px auto;
+
+}
+.container-c .chua-item .left-img3{
+	background: url(img/特别策划-青海.jpg) no-repeat center;
+	background-size: 350px auto;
+
+}
+.container-c .chua-item .left-img4{
+	background: url(img/特别策划-鼓浪屿.jpg) no-repeat center;
+	background-size: 350px auto;
+
+}
+.container-c .chua-item .left-img5{
+	background: url(img/特别策划-西安.jpg) no-repeat center;
+	background-size: 350px auto;
+}
+.container-c .chua-item .left-img6{
+	background: url(img/特别策划-长白山.jpg) no-repeat center;
+	background-size: 350px auto;
+
+}
+.container-c .chua-item .right-txt1,
+.container-c .chua-item .right-txt2,
+.container-c .chua-item .right-txt3,
+.container-c .chua-item .right-txt4,
+.container-c .chua-item .right-txt5,
+.container-c .chua-item .right-txt6{
+	float: left;
+	width: 200px;
+	height: 100%;
+}
+
+/*右边描述*/
+.container-c .right-txt .txt-title,
+.container-c .right-txt1 .txt1-price,
+.container-c .right-txt2 .txt2-price,
+.container-c .right-txt3 .txt3-price,
+.container-c .right-txt4 .txt4-price,
+.container-c .right-txt5 .txt5-price,
+.container-c .right-txt6 .txt6-price,
+.container-c .right-txt1 .txt1-tips,
+.container-c .right-txt2 .txt2-tips,
+.container-c .right-txt3 .txt3-tips,
+.container-c .right-txt4 .txt4-tips,
+.container-c .right-txt5 .txt5-tips,
+.container-c .right-txt6 .txt6-tips,
+.container-c .right-txt1 .txt1-desc1,
+.container-c .right-txt2 .txt2-desc1,
+.container-c .right-txt3 .txt3-desc1,
+.container-c .right-txt4 .txt4-desc1,
+.container-c .right-txt5 .txt5-desc1,
+.container-c .right-txt6 .txt6-desc1,
+.container-c .right-txt1 .txt1-desc2,
+.container-c .right-txt2 .txt2-desc2,
+.container-c .right-txt3 .txt3-desc2,
+.container-c .right-txt4 .txt4-desc2,
+.container-c .right-txt5 .txt5-desc2,
+.container-c .right-txt6 .txt6-desc2{
+	margin-left: 25px;
+	
+}
+.container-c .right-txt1 .txt1-title,
+.container-c .right-txt2 .txt2-title,
+.container-c .right-txt3 .txt3-title,
+.container-c .right-txt4 .txt4-title,
+.container-c .right-txt5 .txt5-title,
+.container-c .right-txt6 .txt6-title{
+	display: block;
+	margin-top: 30px;
+	color: #3a3a3a;
+	font-size: 16px;
+	line-height: 1em;
+	height: 1em;
+}
+.container-c .right-txt1 .txt1-title:hover,
+.container-c .right-txt2 .txt2-title:hover,
+.container-c .right-txt3 .txt3-title:hover,
+.container-c .right-txt4 .txt4-title:hover,
+.container-c .right-txt5 .txt5-title:hover,
+.container-c .right-txt6 .txt6-title:hover{
+	color: red;
+	text-decoration:underline;
+}
+.container-c .right-txt1 .txt1-price,
+.container-c .right-txt2 .txt2-price,
+.container-c .right-txt3 .txt3-price,
+.container-c .right-txt4 .txt4-price,
+.container-c .right-txt5 .txt5-price,
+.container-c .right-txt6 .txt6-price{
+	color:#727171;
+	font-size: 14px;
+	height: 1em;
+	line-height: 1em;
+	margin-top: 10px;
+	margin-bottom:10px;
+}
+.container-c .right-txt1 .txt1-tips,
+.container-c .right-txt2 .txt2-tips,
+.container-c .right-txt3 .txt3-tips,
+.container-c .right-txt4 .txt4-tips,
+.container-c .right-txt5 .txt5-tips,
+.container-c .right-txt6 .txt6-tips{
+	width: 136px;
+	height: 20px;
+	margin-bottom:35px;
+	/*18 40*/
+}
+.container-c .right-txt1 .txt1-tips a,
+.container-c .right-txt2 .txt2-tips a,
+.container-c .right-txt3 .txt3-tips a,
+.container-c .right-txt4 .txt4-tips a,
+.container-c .right-txt5 .txt5-tips a,
+.container-c .right-txt6 .txt6-tips a{
+	color: #474646;
+	display: inline-block;
+	height: 18px;
+	width: 40px;
+	line-height: 18px;
+	border: 1px solid #b9b9b9;
+	font-size: 14px;
+	text-align: center;
+}
+.container-c .right-txt1 .txt1-desc1,
+.container-c .right-txt2 .txt2-desc1,
+.container-c .right-txt3 .txt3-desc1,
+.container-c .right-txt4 .txt4-desc1,
+.container-c .right-txt5 .txt5-desc1,
+.container-c .right-txt6 .txt6-desc1{
+	margin-bottom:10px;
+	font-size: 14px;
+	height: 1em;
+	line-height: 1em;
+	color: #727171;
+}
+.container-c .right-txt1 .txt1-desc2,
+.container-c .right-txt2 .txt2-desc2,
+.container-c .right-txt3 .txt3-desc2,
+.container-c .right-txt4 .txt4-desc2,
+.container-c .right-txt5 .txt5-desc2,
+.container-c .right-txt6 .txt6-desc2{
+	font-size: 14px;
+	height: 1em;
+	line-height: 24px;
+	color: #727171;
+}
+
+
+
+
+
+
+/******统一标题*/
+.title-cname{
+	margin-left: -24px;
+	padding-top: 100px;
+	background: url(img/title.jpg) no-repeat left 105px;
+	width: 100%;
+	height: 24px;
+	text-indent: 24px;
+	color: #3b3b3b;
+	font:bold 24px/1 'Microsoft YaHei';  
+
+}
+.title-ename{
+	padding-top: 8px;
+	margin-left: -24px;
+	text-indent: 24px;
+	height: 11px;
+	font-size: 14px;
+	color: #c7c7c7;
+	line-height: 11px;
+}

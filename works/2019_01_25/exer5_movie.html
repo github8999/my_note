@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="movies.js"></script>
+		
+	</head>
+	<body>
+		
+		
+		
+		
+		
+		
+		
+		
+		<script type="text/javascript">
+			movieList(data.subjects);
+			
+			function movieList(subjects){
+				
+				console.log("迎春节电影表单:");	
+				
+				// 第1部电影:<<死侍2：我爱我家>> 评分:40,类型:喜剧,动作,科幻. 
+				// alert(data);
+				// 参与演员:瑞恩·雷诺兹/乔什·布洛林/朱利安·迪尼森,导演:大卫·雷奇
+				
+				for(var movies in subjects){
+					var title = subjects[movies].title;				//片名
+					var average = subjects[movies].rating.average;  //评分
+					var genres = subjects[movies].genres;			//电影题材
+					var casts = "";
+					for(var index in subjects[movies].casts){
+						casts+= "/"+subjects[movies].casts[index].name;
+					}
+					casts=casts.substr(1);
+					
+					var directors = "";
+					for(var index in subjects[movies].directors){
+						directors+= "/"+subjects[movies].directors[index].name;
+					}
+					directors=directors.substr(1);
+					
+					console.log("第"+(Number(movies)+1)+"部\t片名:《"+title + "》  评分:" + average+"  电影题材:"+genres.join("、")+"  演员:"+casts+"  导演:"+directors );
+					
+				}
+					
+			}
+			
+			
+			
+		
+		
+			
+				
+		</script>
+	</body>
+</html>

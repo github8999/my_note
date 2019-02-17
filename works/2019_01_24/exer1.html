@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script>
+			
+			var r = 0;
+			r = prompt("请输入你要计算周长和面积的半径r:");
+			alert("该圆形的周长为:"+perimeter(r));
+			alert("该圆形的面积为:"+area(r));
+			
+			// 求圆的周长和面积
+			function perimeter(r){
+				return 2*Math.PI*r;
+			}
+			function area(r){
+				return Math.PI*Math.pow(r,2);
+			}
+			
+		</script>
+	</body>
+</html>

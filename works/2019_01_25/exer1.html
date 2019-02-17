@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script>
+			// 将一个字符串数组输出为|分割的形式，比如“刘备|张飞|关羽”。使用两种方式实现
+			var strArr = ["刘备","关羽","张飞"];
+			
+			alert(input2(strArr));
+			// alert(input(strArr));
+			
+			
+			
+			
+			function input(arr){
+				var newArr = arr.join("|");
+				return newArr;
+			}
+			
+			function input2(arr){
+				var str = "";
+				for(var i = 0 ;i<arr.length-1;i++){
+					str+=arr[i]+"|";
+				}
+				str+=arr[arr.length-1];
+				return str;
+			}
+		</script>
+	</body>
+</html>

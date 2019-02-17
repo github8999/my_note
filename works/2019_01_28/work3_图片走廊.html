@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			/* body没内容时这样写可以让body充满整个屏幕 */
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			html,body{
+				width: 100%;
+				height: 100%;
+				background: url(imgs/hulk.jpg) no-repeat center;
+				background-size: cover;
+			}
+			.banner{
+				width: 100%;
+				height: 100px;
+				background-color: rgba(0,0,0,.3);
+				padding: 10px 0;
+			}
+			.banner .banner-list{
+				float: left;
+				width: 200px;
+				height: 100px;
+				margin: 0 10px;
+				
+			}
+			.banner .banner-list .banner-img{
+				width: 200px;
+				height:100px;
+				
+			}
+			.active{
+				border: 2px solid red;
+				box-sizing: border-box;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="banner">
+			<a href="JavaScript:;" class="banner-list">
+				<img src="imgs/hulk.jpg" class="banner-img active" onclick="changeBgm(this)">
+				</a>
+			<a href="JavaScript:;" class="banner-list">
+				<img src="imgs/hgf.jpg" class="banner-img" onclick="changeBgm(this)">
+			</a>
+			<a href="JavaScript:;" class="banner-list">
+				<img src="imgs/gtx.jpg" class="banner-img" onclick="changeBgm(this)">
+			</a>
+		</div>
+		<script type="text/javascript">
+			
+			function changeBgm(obj){
+				//标记法排他
+				var lists = mychilds(obj.parentNode.parentNode); //所有的a标签
+				var imgs;
+				var imgClassName;
+				var newClassName = '';
+				for(var i = 0 ; i < lists.length ; i++){
+					imgs = mychilds(lists[i])[0];  //img标签
+					imgClassName = imgs.getAttribute("class"); //获取img标签的class值
+					if(imgClassName.indexOf("active") != -1){	//
+						newClassName = imgClassName.split(" active").join("");
+						imgs.removeAttribute("class");
+						imgs.setAttribute("class",newClassName);
+					}
+				}
+				obj.setAttribute("class",newClassName+" active");
+				document.body.style.backgroundImage = "url("+obj.src+")";
+			}
+			
+			
+			function mychilds(pNode){
+				nodeAll = pNode.children;
+				nodeEle = [];
+				for(var i = 0 ; i < nodeAll.length ; i++){
+					if(nodeAll[i].nodeType == 1){
+						nodeEle.push(nodeAll[i]);
+					}
+				} 
+				return nodeEle;
+			}
+			
+			
+		</script>
+	</body>
+</html>

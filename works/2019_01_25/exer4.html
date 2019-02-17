@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			// .工资的数组[1500,1200,2000,2100,1800],把工资超过2000的删除
+			var salaryArr = [1500,1200,2000,2100,1800];
+			
+			alert(deSalary(salaryArr));
+			
+			function deSalary(arr){
+				for(var i = 0 ; i < arr.length ; i++){
+					if(arr[i]>2000){
+						arr.splice(i,1);
+						i--;
+					}
+				}
+				return arr;
+			}
+			
+		</script>
+	</body>
+</html>

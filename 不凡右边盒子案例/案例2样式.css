@@ -1,0 +1,167 @@
+	/*清除默认样式*/
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		ul,ol{
+			list-style:none; 
+		}
+		a{
+			text-decoration:none;
+		}
+
+		.html-content{
+			margin: 500px auto;
+			width: 100%;
+			height: 600px;
+			background-color: gray;
+
+		}
+		.zx{
+			position:fixed;
+			right: 9px;
+			bottom: 99px;
+			width: 38px;
+			height: 119px;
+			/*background-color: lightgreen;*/
+		}
+		.zx .zx-qq,
+		.zx .zx-wx,
+		.zx .zx-md{
+			width: 38px;
+			height: 38px;
+			cursor:pointer;
+		}
+
+		/*右下角咨询的qq部分*/
+		.zx .zx-qq{
+			position:relative;
+			background-color: #6872b9;
+			background-image: url('img/qq.png');
+		}
+ 		.zx .zx-qq .qq-list{
+			display: none;
+			position: absolute;
+			right: 0;
+			top: -147px;
+			width: 170px;
+			height: 184px;
+			font-size: 14px;
+			background-color: #6872b9;
+			z-index: 1;
+		}
+		.zx .zx-qq:hover .qq-list{
+			display: block;
+		}
+		.zx .zx-qq .list-title,
+		.zx .zx-qq .list-teacher1,
+		.zx .zx-qq .list-teacher2,
+		.zx .zx-qq .list-tel,
+		.zx .zx-qq .list-number{
+			color: #717171;
+			width: 100%;
+			height: 36px;
+			text-indent: 50px;
+			line-height: 36px;
+
+		}
+		.zx .zx-qq .list-title{
+			color: #fff;
+			position:relative;
+			cursor:default;
+			height: 40px;	
+			line-height: 40px;
+			background-color: #6872b9;
+			text-indent: 20px;
+		}
+		.zx .zx-qq .list-title .title-x{
+			position:absolute;
+			right: 12px;
+			top: 50%;
+			margin-top: -6px;
+			display: block;
+			width: 12px;
+			height: 12px;
+			background-image: url(img/x.png);
+			background-size: 12px auto;
+			
+
+		}
+		.zx .zx-qq .list-teacher1,
+		.zx .zx-qq .list-teacher2{
+			background: url(img/qq_icon2.png) no-repeat 20px;
+
+			
+		}
+		.zx .zx-qq .list-teacher1 .teacher1-a,
+		.zx .zx-qq .list-teacher2 .teacher2-a{
+			display: block;
+			width: 100%;
+			height: 100%;
+			color: #717171;
+
+		}
+
+		.zx .zx-qq .list-teacher1{
+			background-color: #e8e8e8;
+			line-height: 
+		}
+		.zx .zx-qq .list-teacher2{
+			background-color: #F3F3F3;
+		}
+		.zx .zx-qq .list-teacher1:hover,
+		.zx .zx-qq .list-teacher2:hover{
+			height: 45px;
+		}
+		.zx .zx-qq .list-teacher1:hover .teacher1-a,
+		.zx .zx-qq .list-teacher2:hover .teacher2-a{
+			
+			/*background-color: black;*/
+			color: #fff;
+			background: black url(img/qq_icon.png) no-repeat 20px;
+			
+		}
+		.zx .zx-qq .list-tel{
+			background-image: url(img/tel_icon.png);
+			background-repeat: no-repeat;
+			background-position: 20px;
+			background-color: #fff;
+		}
+		.zx .zx-qq .list-number{
+			line-height: 18px;
+			text-indent: 20px;
+			background-color: #fff;
+		}
+
+
+		
+		
+
+
+		/*右下角咨询的微信部分*/
+		.zx .zx-wx{
+			position:relative;
+			background-color: #32AF2C;
+			background-image: url('img/wx.png');
+		}
+		.zx .zx-wx .zx-wx-em{
+			display: none;
+			position:absolute;
+			right:38px;
+			width: 130px;
+			height: 130px;
+			background-image: url(img/ewm.jpg);
+			background-size: 130px auto;
+			
+		}
+		.zx .zx-wx:hover .zx-wx-em{
+			display: block;
+		}
+
+		/*右下角咨询的顶部锚点*/
+		.zx .zx-md{
+			display: block;
+			margin-top: 10px;
+			background-color: #646464;
+			background-image: url('img/goup.png');
+		}

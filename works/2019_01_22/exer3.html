@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script>
+		// 找出1~1000之中，所有能被5整除，或者被6整除的数字。在控制台输出。
+		console.log("1~1000之间所有能被5整除,或者被6整除的数字");
+		var i= 0;
+		var arr5 = new Array();
+		var arr6 = new Array();
+		var both = new Array();
+		for(i=1;i<=1000;i++){
+			if(i%5==0&&i%6==0){
+				both[(i/30)-1]=i;
+			}else if(i%5==0){
+				arr5[(i/5)-1]=i;
+			}else if(i%6==0){
+				arr6[(i/6)-1]=i;
+			}
+		}
+				console.log("能同时被5和6整除的有: "+both+".");
+				console.log("能被5整除的有: "+arr5+".");
+				console.log("能被6整除的有: "+arr6+".");
+		
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

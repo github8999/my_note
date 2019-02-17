@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var arr = [7,8,1,7,0,5,3,9,7,11,13];
+			maxNum(arr);
+			function maxNum(arr){
+				for(var i = 1;i<arr.length;i++){
+					for(var j = 0;j<arr.length-i;j++){
+						if(arr[j]<arr[j+1]){
+							var temp = arr[j];
+							arr[j] = arr[j+1];
+							arr[j+1] = temp;
+						}
+					}
+				}
+				// return arr;
+			}
+			alert("最大的为:" +arr[0]);
+			alert("最小的为:"+arr[arr.length-1]);
+			
+		</script>
+	</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			
+			console.log(addMultiple(3));
+			
+			function addMultiple(num){
+				var sum = 0;
+				for(var i = 1 ; i<=num ;i++){
+					sum+=multiple(i); 
+				}
+				return sum;
+			}
+			function multiple(num){
+				if(num==1){
+					return 1;
+				}else{
+					
+				return num*multiple(num-1);
+				}
+			}
+		</script>
+	</body>
+</html>

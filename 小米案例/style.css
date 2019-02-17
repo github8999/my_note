@@ -1,0 +1,313 @@
+
+		/*清除默认样式*/
+		*{
+			margin: 0;
+			padding:0;
+		}
+		ul,ol{
+			list-style: none;
+		}
+		a{
+			text-decoration: none;
+		}
+		
+
+		/*banner部分*/
+		.banner{
+			width: 1226px;
+			position:relative;
+			height: 460px;
+			background-color: gray;
+			background-image: url(img/m1.jpg);
+			background-size: 100% auto;
+			margin: 0px auto;
+			/*overflow: hidden;*/
+
+		}
+
+		.banner .arr{
+			position: absolute;
+			top: 50%;
+			margin-top: -34.5px;
+			width: 41px;
+			height: 69px;
+			text-align: center;
+			line-height: 69px;
+		}
+
+		.banner .arr.arr-left{
+			left: 234px;
+		}
+		.banner .arr.arr-right{
+			right: 0px;
+		}
+		.banner .arr a{
+			display: block;
+			width: 100%;
+			height:100%;
+		}
+		.banner .arr.arr-left a{
+			background-image: url('img/zjt0.png');
+		}
+		.banner .arr.arr-right a{
+			background-image: url('img/yjt0.png');
+		}
+		.banner .arr.arr-left a:hover{
+			background-image: url('img/zjt.png');
+		}
+		.banner .arr.arr-right a:hover{
+			background-image: url('img/yjt.png');
+		}
+		.banner .banner-btn{
+			position:absolute;
+			width:120px;
+			height: 10px;
+			right: 50px;
+			bottom: 30px;
+			/*background-color: orange;*/
+		}
+		.banner .banner-btn li{
+			float: left;
+			width:10px;
+			height: 100%;
+			/*background-color: #446888;*/
+			margin-right:10px; 
+		}
+		.banner .banner-btn li a{
+			border-radius: 50%;
+			display: block;
+			width: 6px;
+			height: 6px;
+			border:2px solid #7D96AC;
+			background-color: #446888;
+
+		}
+		.banner .banner-btn li a:hover{
+			background-color: #AACEEE;
+			border:2px solid #667C8F;
+
+		}
+		/*banner中左侧的菜单栏*/
+		.banner .banner-nav{
+
+			text-align: center;
+			width: 233.99px;
+			height:100%;
+			background-color: #2E465A;
+			overflow: hidden;
+		}
+		.banner .banner-nav .banner-nav-list{
+			/*background-color: orange;*/
+			margin-top: 20px;
+			width: 100%;
+			height:420px;
+		}
+		.banner .banner-nav li{
+			/*position:relative;*/
+
+		}
+		.banner .banner-nav li a{
+			float:left;
+			display:block;
+			text-align: left;
+			text-indent:2em;
+			width: 100%;
+			height: 42px;
+			color: #FFFFFF;
+			font-size: 14px;
+			line-height: 42px;
+			background:url('img/jty.png') no-repeat 90% center;
+			background-size: 14px 14px;
+	/*		background-image: url('img/jty.png');
+			background-repeat: no-repeat;
+			background-position: 90%;*/
+		}
+		.banner .banner-nav li a:hover{
+			background-color: #FF6700;
+		}
+
+
+		/*topbar黑色顶部	*/
+		.topbar{
+			width: 1599px;
+			height: 40px;
+			background-color: #333333;
+			/*overflow: hidden;*/
+			/*color:white; */
+	
+		}
+		.topbar .top-left{
+			float: left;
+			width: 700px;
+			height: 40px;
+			margin-left:11.5%;
+			line-height: 40px;
+			color: #424242;
+
+		}
+		.topbar .top-left li,.topbar .top-left div,
+		.topbar .top-right li,.topbar .top-right div{
+			height: 40px;
+			margin-left:6px; 
+			margin-right: 6px;
+			float: left;
+			color: #B0B0B0;
+			font-size: 12px;
+			line-height: 40px;
+
+		}
+		.topbar .top-right{
+			margin-left: 1140px;
+		}
+		.topbar .top-right .top-right-car{
+			width: 122px;
+			background-color: #424242;
+			background-image:url(img/car.png);
+			background-position: 17px center;
+			background-repeat:no-repeat; 
+			background-size: 17px auto;
+			text-indent:3.5em;
+			
+		}
+		.topbar .top-right .top-right-car:hover{
+			background-color:#FFFFFF;
+		}
+
+
+		.topbar .top-left li a,.topbar .top-right li a{
+			color: #B0B0B0;
+		}
+		.topbar .top-left div,.topbar .top-right div{
+			margin: 0;
+			color: #424242;
+		}
+
+
+
+		/*topbar下的header部分*/
+		.host-header{
+			margin: 25px auto;
+			width: 1226px;
+			height: 50px;
+		}
+		
+		/*header中左侧的小米logo部分*/
+		.host-header .host-header-logo{
+			float: left;
+			width: 233.99px;
+			height: 100%;		
+			/*background-color: orange;*/
+		}
+
+		.host-header .host-header-logo .header-logo-icon{
+			float: left;
+			width: 50px;
+			height: 50px;
+			background:#ff6700 url('img/xm.png') center;
+
+		}
+		.host-header .host-header-logo .header-logo-xmnh{
+			float: left;
+			width: 165px;
+			height: 50px;
+			margin-left:18.99px;
+			background-color: gray;
+			background:#ff6700 url('img/mgif.gif') center;
+		}
+
+
+
+
+		/*header中的导航部分*/
+		.host-header .host-header-nav{
+			float: left;
+			width: 696.01px;
+			height: 100%;
+		}
+		.host-header .host-header-nav .host-header-item{
+			line-height: 50px;
+			height: 100%;
+			float: left;
+
+		}
+		.host-header .host-header-nav .host-header-item:hover a{
+			color: #ff6700;	
+		}
+		.host-header .host-header-nav .host-header-item a{
+			padding: 0 10px;
+			height: 100%;
+			display: block;
+			color: black;
+
+		}
+		
+		/*header中的搜索框部分*/
+		.host-header .host-header-search{
+			position:relative;
+			float: left;
+			width: 296px;
+			height: 50px;
+			/*border:1px solid #e0e0e0;*/
+			/*background-color:lightgreen;*/
+
+		}
+		.host-header .host-header-search:hover,
+		.host-header .host-header-search:hover .header-search-input,
+		.host-header .host-header-search:hover .header-search-btn{
+			border-color:#B2B2B2;
+		}
+
+		
+		.host-header .host-header-search .header-search-input{
+			width: 243px;
+			height: 48px;
+			border: 1px solid #e0e0e0;
+			border-right:none;
+			/*outline设置获取到input的文本框焦点的颜色*/
+			outline: none;
+			text-indent: 1em;
+		}
+		.host-header .host-header-search .header-search-btn{
+			position:absolute;
+			right: 0px;
+			width: 50px;
+			height: 48px;
+			background-color: green;
+			background:  url('img/fdj1.png') no-repeat center;
+			border: 1px solid #e0e0e0;	
+
+		}
+		.host-header .host-header-search .header-search-btn:hover{
+			background:  #ff6700 url('img/fdj.png') no-repeat center ;
+			border: 1px solid #ff6700;	
+		}
+		/*搜索框里的a标签*/
+		.host-header .host-header-search .header-search-item1,
+		.host-header .host-header-search .header-search-item2{
+			position:absolute;
+			top: 50%;
+			margin-top: -9px;
+			height: 18px;
+			color: #878775;
+			text-align:center;
+			font-size: 10px;
+			background-color: #EEEEEE;
+		}
+		.host-header .host-header-search .header-search-item1:hover,
+		.host-header .host-header-search .header-search-item2:hover{
+			color: #fff;
+			background-color: #ff6700;
+		}
+		.host-header .host-header-search .header-search-item1{
+			width: 40px;
+			right: 140px;
+		}
+		.host-header .host-header-search .header-search-item2{
+			width: 73px;
+			right: 61px;
+		}
+
+
+
+
+

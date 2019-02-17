@@ -1,0 +1,91 @@
+/*清除默认格式*/
+*{
+	margin:0;
+	padding:0;
+}
+ul{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+.box1{
+	width: 290px;
+	height: 232px;
+	/*background-color: orange;*/
+/*	margin:50vh auto 0;
+	transform: translateY(-50%);*/
+	margin: 200px auto;
+}
+
+.box1 .sprite-list li{
+	cursor: pointer;
+	border:1px solid #f4f4f4; 
+	float: left;
+	height: 75px;
+	/*background-color: green;*/
+}
+.box1 .sprite-list li:hover p{
+	color: #F40;
+}
+.box1 .sprite-list .sprite-cols1,
+.box1 .sprite-list .sprite-cols4{
+	width: 70px;
+	/*background-color: blue;*/
+}
+.box1 .sprite-list .sprite-cols2,
+.box1 .sprite-list .sprite-cols3{
+	width:71px;
+}
+.box1 .sprite-list span{
+	display:block;
+	width: 24px;
+	height: 24px;
+	background-color: red;
+	margin: 10px auto 5px;
+}
+.box1 .sprite-list p{
+	width: 100%;
+	height: 24px;
+	color: #3C3C3C;
+	font-size: 12px;
+	line-height: 24px;
+	/*background-color: yellow;*/
+	text-align: center;
+}
+.box1 .sprite-list .cell-icon1{
+	background: url(img/tb-12gongge.png) no-repeat 0 0;
+}
+.box1 .sprite-list .cell-icon2{
+	background: url(img/tb-12gongge.png) no-repeat 0 -88px;
+}
+.box1 .sprite-list .cell-icon3{
+	background: url(img/tb-12gongge.png) no-repeat 0 -44px;
+}
+.box1 .sprite-list .cell-icon4{
+	background: url(img/tb-12gongge.png) no-repeat 0 -132px;
+}
+.box1 .sprite-list .cell-icon5{
+	background: url(img/tb-12gongge.png) no-repeat 0 -176px;
+}
+.box1 .sprite-list .cell-icon6{
+	background: url(img/tb-12gongge.png) no-repeat 0 -220px;
+}
+.box1 .sprite-list .cell-icon7{
+	background: url(img/tb-12gongge.png) no-repeat 0 -264px;
+}
+.box1 .sprite-list .cell-icon8{
+	background: url(img/tb-12gongge.png) no-repeat 0 -308px;
+}
+.box1 .sprite-list .cell-icon9{
+	background: url(img/tb-12gongge.png) no-repeat 0 -352px;
+}
+.box1 .sprite-list .cell-icon10{
+	background: url(img/tb-12gongge.png) no-repeat 0 -396px;
+}
+.box1 .sprite-list .cell-icon11{
+	background: url(img/tb-12gongge.png) no-repeat 0 -440px;
+}
+.box1 .sprite-list .cell-icon12{
+	background: url(img/tb-12gongge.png) no-repeat 0 -484px;
+}

@@ -1,0 +1,119 @@
+/*页脚部分*/
+.footer{
+	background-color: #f2f2f2;
+	width: 100%;
+	height: 581px;
+}
+.footer .footer-c{
+	margin:0 auto;
+	width: 1200px;
+	height: 581px;
+}
+/*公用页脚部分*/
+.footer-common{
+	width: 100%;
+	height: 438px;
+}
+.footer-common .left-info,
+.footer-common .right-info{
+	float: left;
+	width: 600px;
+	height: 438px;
+}
+.footer-common .left-info .info-title{
+	margin-top: 78px;
+	margin-bottom: 50px;
+	font-size: 18px;
+	line-height: 1em;
+	height: 1em;
+	width: 100%;
+	color:#5d5d5d;
+}
+.footer-common .left-info .info-addr,
+.footer-common .left-info .info-ybian,
+.footer-common .left-info .info-tel,
+.footer-common .left-info .info-email,
+.footer-common .left-info .info-jump,
+.footer-common .left-info .info-copy{
+	color: #9fa2a2;
+	margin-bottom: 20px;
+	font-size: 14px;
+	height: 14px;
+	line-height: 1em;
+}
+.footer-common .info-jump .jump-qq,
+.footer-common .info-jump .jump-wx,
+.footer-common .info-jump .jump-wb{
+	display: inline-block;
+	width: 20px;
+	height: 16px;
+	margin-right: 10px;
+}
+.footer-common .info-jump .jump-qq{
+	background-image: url(img/wb.png);
+	
+}
+.footer-common .info-jump .jump-wx{
+	background-image: url(img/wb.png);
+}
+.footer-common .info-jump .jump-wb{
+	background-image: url(img/wb.png);
+}
+
+/*右侧提交表单*/
+.footer-common .right-info .right-box{
+	width: 500px;
+	padding-left: 100px;
+	height: 100%;
+}
+
+.footer-common .right-info .right-uname,
+.footer-common .right-info .right-email,
+.footer-common .right-info .right-tel,
+.footer-common .right-info .right-content,
+.footer-common .right-info .right-submit{
+	float: left;
+	margin-bottom: 45px; 
+	height: 50px;
+	width: 100%;
+	/*background-color: yellow;*/
+}
+.footer-common .right-info .right-uname,
+.footer-common .right-info .right-email,
+.footer-common .right-info .right-tel{
+	margin-top: 100px;
+	width: 135px;
+	height: 50px;
+	margin-right: 47px;
+}
+
+.footer-common .right-info .right-tel{
+	margin-right: 0;
+
+}
+
+.footer-common .right-info .right-item-desc{
+	color: #bfbdbd;
+	font-size: 14px;
+	line-height: 1em;
+	height: 1em;
+}
+.footer-common .right-info .right-item-input{
+	background-color: #F2F2F2;
+	border: none;
+	border-bottom: 2px solid #bfbdbd;
+	outline: none;
+	width: 100%;
+	margin-top:20px; 
+	height: 16px;
+}
+.footer-common .right-info .right-item-sub{
+	color: #bfbdbd;
+	width: 60px;
+	height: 25px;
+	text-align: center;
+	line-height: 25px;
+	background-color: #474646;
+	border: none;
+}
+

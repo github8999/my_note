@@ -1,0 +1,85 @@
+*{
+	margin: 0;
+	padding:0;
+}
+ul{
+	list-style: none;
+}
+a{	
+	text-decoration: none;
+}
+.header{
+	width: 100%;
+	height: 76px;
+	background-color: #fdfcfc;
+}
+.header .header-c{
+	position:relative;
+	width: 1198px;
+	height: 100%;
+	margin: 0 auto; 
+	padding: 1px;
+}
+/*header左侧的logo*/
+.header .header-c .left-logo{
+	width: 106px;
+	height: 46px;
+	margin: 15px 0;
+	background-image: url(img/ml-logo.jpg);
+}
+
+/*header右侧的导航栏*/
+.header .header-c .right-nav{
+	position:absolute;
+	right: 0;
+	top: 50%; 
+	margin-top: -15px;
+}
+.header .header-c .right-nav-cols{
+	float: left;
+	height: 30px;
+	margin-left: 80px;
+
+}
+.header-c .right-nav-cols .right-nav-cols-con{
+	display: block;
+	width: 100%;
+	height: 100%;
+	color: #818181;
+	font-size: 16px;
+	line-height: 30px;
+}
+.header-c .right-nav-cols .right-nav-cols-con:hover{
+	color: #00daed;
+}
+.header-c .right-nav-cols .right-nav-cols-con.active{
+	color: #00daed;
+	border-bottom:2px solid #00daed; 
+}
+/*关于我们*/
+
+
+/*联系我们*/
+.header-c .right-nav-lastcols:hover .callme,
+.header-c .right-nav-cols3:hover .aboutus{
+	display: block;
+	}
+
+.header-c .right-nav-cols .callme,
+.header-c .right-nav-cols .aboutus{
+	display: none;
+	text-align: center;
+	line-height: 25px;
+	font-size: 14px;
+	width: 64px;
+	height: 57px;
+	background-color: rgba(255,255,255,.5);
+}
+.header-c .right-nav-cols .callme a,
+.header-c .right-nav-cols .aboutus a{
+	color: #818181;	
+}
+.header-c .right-nav-cols .callme a:hover,
+.header-c .right-nav-cols .aboutus a:hover{
+	color: #00daed;
+}

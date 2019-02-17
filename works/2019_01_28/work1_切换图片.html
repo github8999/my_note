@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			.box{
+				position: relative;
+				display: block;
+				width: 400px;
+				height: 400px;
+				margin: 0 auto;
+			}
+			.img1{
+				width: 400px;
+				height: 400px;
+			}
+			input{
+				position: absolute;
+				top:50%;
+				
+				
+			}
+			.btn1{
+				left:0;
+			}
+			.btn2{
+				right: 0;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<a class="box" href="#" >
+			<img class="img1" src="imgs/1.jpg" alt="" >
+			
+		<input class="btn1" type="button" name="" id="" value="上一个" />
+		<input class="btn2" type="button" name="" id="" value="下一个" />
+		</a>
+		<script type="text/javascript">
+			var arrUrl= ["imgs/1.jpg","imgs/2.jpg","imgs/3.jpg","imgs/4.jpg","imgs/5.jpg","imgs/6.jpg","imgs/7.jpg"];
+			var btn1 = document.getElementsByClassName("btn1")[0];
+			var btn2 = document.getElementsByClassName("btn2")[0];
+			var imgEle = document.getElementsByClassName("img1")[0];
+			btn2.onclick = function (){
+				imgCurrent = imgEle.getAttribute("src");
+				indexCurrent = arrUrl.indexOf(imgCurrent);				
+				// alert(indexCurrent);
+				if(indexCurrent==arrUrl.length-1){
+					imgEle.setAttribute("src",arrUrl[0]);
+				}else{
+					imgEle.setAttribute("src",arrUrl[indexCurrent+1]);
+				}
+			btn1.onclick = function (){
+				imgCurrent = imgEle.getAttribute("src");
+				indexCurrent = arrUrl.indexOf(imgCurrent);				
+				// alert(indexCurrent);
+				if(indexCurrent==0){
+					imgEle.setAttribute("src",arrUrl[arrUrl.length-1]);
+				}else{
+					imgEle.setAttribute("src",arrUrl[indexCurrent-1]);
+				}
+				
+			}
+					// src ="imgs/2.jpg";
+				
+				
+				// imgEle.src=arrUrl[]
+			}
+		</script>
+		
+	</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			<!-- 找到数组中每个字母出现的次数["c","a","z","a","a"] -->
+			var strArr = ["c","a","z","a","a","z"];
+			
+			var obj = sameEle(strArr);
+			for(var index in obj){
+				console.log(index+":"+obj[index]);
+			}
+		function sameEle(arr){
+			
+			var charCount = {};
+			for(var i=0;i<arr.length;i++){
+				//判断会有三种情况:如果charCount有该字母属性
+				//1.如果有这个属性,一定已经赋值了
+				//2.如果没有这个属性就会报undefined
+				if(charCount[arr[i]]) {
+					charCount[arr[i]]+=1;
+				}else{
+					charCount[arr[i]]=1;
+				}
+			}
+			return charCount;
+		}	
+			
+			
+		</script>
+	</body>
+</html>

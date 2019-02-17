@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script type="text/javascript">
+// 					判断质数
+// 		质数：就是只能被1和自己整除。
+// 		翻译过来：它的因数个数是2。
+// 		比如：2、3、5、7、11、13、17、19、23、29、31、37……
+// 
+// 		用户输入一个数字，弹出这个数字是否是质数。
+			var num = 0;
+			var count = 0;
+			num = prompt("请输入你要判断(是否为质数)的数字:");
+			for(var i = 1;i<=num ; i++ ){
+				if(num%i==0){
+					count++;
+				}
+			}
+			if(count==2){
+				alert(num+"该数字为质数.");
+			}else{
+				alert(num+"不是质数");
+			}
+ 		</script>
+	</head>
+	<body>
+	</body>
+</html>

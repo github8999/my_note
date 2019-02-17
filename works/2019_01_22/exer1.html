@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>年终奖作业</title>
+<!-- 		小例子：
+		某个公司要给员工发年终奖，为了奖励老员工，所以工作时间越长，发的越多，规则如下：
+		工作满0年		            发月薪的1倍月薪`年终奖，如果月薪大于8000，那么就是发1.2倍
+		工作满1年		            发月薪的1.5倍月薪年终奖，如果月薪大于10000，那么就是发1.7倍
+		工作满2年，甚至更多		发月薪的3倍月薪年终奖，如果月薪大于12000，那么就是发3.2倍
+
+		用JS编写程序，让用户输入工作了几年，可以输入0，然后输入月薪。然后算年终奖。 -->
+
+	</head>
+	<body>
+		<script type="text/javascript">
+			var workExp = 0;
+			var salary = 0;
+			var bonus = 0;
+			workExp = prompt("请输入您的工龄:");
+			salary = prompt("请输入您的月薪:");
+			if(workExp<0){//如果工龄小于1,报错
+				alert("请输入正确的数据:");
+			}else{
+				if(workExp<1){
+					bonus =  salary<8000?salary:1.2*salary;
+				}else if(workExp<2){
+					bonus =  salary<10000?salary*1.5:1.7*salary;
+				}else{
+					bonus =  salary<12000?salary*3:3.2*salary;
+				}				
+				alert("您的工龄为:"+workExp+"年 月薪为:"+salary+"元 年终奖为:"+bonus+"元");
+			}
+		</script>
+	</body>
+</html>

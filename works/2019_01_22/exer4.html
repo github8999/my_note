@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script>
+			// 用户输入一个数字，列出所有它能够整除的数字。
+			var num = 0;
+			num = prompt("输入一个数字，列出所有它能够整除的数字:");
+			document.write("能被"+num+"整除的数字有:<br>");
+			console.log("能被"+num+"整除的数字有:");
+			for(var i =1;i<=num;i++){
+				if(num%i==0){
+					console.log(i);
+					document.write(i+"<br>");
+				}
+			}
+			
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

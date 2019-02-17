@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var num = 0;
+			num = prompt("输入一个数字,判断是否为素数:");
+			zhis(num);
+			
+			function zhis(num){
+				var flag = "是一个质数";
+				for(var i = 2;i<num;i++){
+					if(num%i == 0){
+						flag = "不是质数";
+						break;
+					}
+				}
+				alert(num+flag);
+			}
+		</script>
+	</body>
+</html>

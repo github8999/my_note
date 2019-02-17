@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script type="text/javascript">
+			// 所谓的阶乘，比如6的阶乘，就是1*2*3*4*5*6 = 720 现在，计算13的阶乘。
+			function multiple(i){//递归求阶乘
+				if(i == 1){
+					return 1;
+				}
+				return i*multiple(i-1);
+			}
+			var num = prompt("请输入一个数字求该数字的阶乘:")
+			alert("该数字的阶乘为:"+multiple(num));
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

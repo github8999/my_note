@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			// 找到数组中每个字母出现的次数["c","a","z","a","a"]
+			var strArr = ["c","a","z","a","a","z"];
+			delSame(strArr);
+			
+			
+			function delSame(arr){
+				var countArr = [];
+				var charArr = [];
+				var index = 0;
+				for(var i=0;i<arr.length;i++){
+					index = charArr.indexOf(arr[i]);
+					// alert(index);
+					if(index==-1){
+						charArr.push(arr[i]);
+						countArr.push(1);
+					}else{
+						countArr[index]=++countArr[index];
+					}
+				}
+				// alert(countArr);
+				for(var i=0;i<charArr.length;i++){
+					console.log(charArr[i]+"出现了:"+countArr[i]+"次");
+				}
+				
+			}
+			
+		</script>
+	</body>
+</html>
