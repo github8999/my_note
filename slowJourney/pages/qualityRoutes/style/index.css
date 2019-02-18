@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+iframe{
+    display: block;
+    width: 100%;
+}
+.header-iframe{
+    height:76px;
+}
+.footer-iframe{
+    height:581px;
+}
+
+.content{
+    width: 100%;
+    height: 494px;
+    margin: 100px 0;
+}
+.content .content-c{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+}
+.content .content-c .content-item{
+    float: left;
+    width: 287px;
+    height: 100%;
+    margin-left: 17px;
+}
+.content .content-c .content-item.first-item{
+    margin-left: 0;
+}
+
+/* 图片 */
+.content-c .content-item .item-hyperlink{
+    background: url('../img/qualityRoutes-bgi.jpg') no-repeat 0 center;
+    background-size: auto 494px;
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.content-c .content-item.second-item .item-hyperlink{
+    background: url('../img/qualityRoutes-bgi.jpg') no-repeat -210px center;
+    background-size: auto 494px;
+}
+.content-c .content-item.third-item .item-hyperlink{
+    background: url('../img/qualityRoutes-bgi.jpg') no-repeat -540px center;
+    background-size: auto 494px;
+}
+.content-c .content-item.fourth-item .item-hyperlink{
+    background: url('../img/qualityRoutes-bgi.jpg') no-repeat -585px center;
+    background-size: auto 494px;
+}
+.content-c .content-item .img-cover{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.2);
+}
+.content-c .item-hyperlink:hover .img-cover{
+
+    display: none;
+}
+.content-c .content-item .item-title{
+    position: absolute;
+    font-size: 20px;
+    font-weight: bold;
+    top: 112px; 
+    left: 32px;
+    color: #626262;
+}
+.content-c .content-item .item-txt{
+    position: absolute;
+    color: #626262;
+    line-height: 28px;
+    font-size: 16px;
+    top: 180px;
+    left: 32px;
+    width: auto;
+    height: auto;
+}
+.content-c .content-item .item-txt.txt-second{
+    top: 208px;
+}
+
+
+
+
+/* content中li的部分 */
+
+/* 287 17 */
