@@ -70,7 +70,6 @@
 			float: left;
 			width:10px;
 			height: 100%;
-			/*background-color: #446888;*/
 			margin-right:10px; 
 		}
 		.banner .banner-btn li a{
@@ -116,7 +115,7 @@
 			color: #FFFFFF;
 			font-size: 14px;
 			line-height: 42px;
-			background:url('img/jty.png') no-repeat 90% center;
+			background: url('img/jty.png') no-repeat 90% center;
 			background-size: 14px 14px;
 	/*		background-image: url('img/jty.png');
 			background-repeat: no-repeat;
