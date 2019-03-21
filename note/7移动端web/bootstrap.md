@@ -36,7 +36,7 @@
     ```
         col-xs-offset 通过margin实现
         col-xs-pull/push 通过定位实现
-
+        
         列嵌套
         如果在col里面嵌套row,row的宽度是基于col
         如果col里面嵌套container,container是固定宽度不基于col
