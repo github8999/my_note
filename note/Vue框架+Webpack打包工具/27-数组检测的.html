@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <p @click="change">点击改变</p>
+        <p v-for="item in msg" :key="item+'-p'">{{item}}</p>
+    </div>
+    <script src="vue.js"></script>
+    <script>
+        // 如果修改了data中的数据,会自动渲染到页面上
+        // 注意: data中数组的不可检测问题:
+        // 1. 如果清空数组使用length属性清空会修改data中的数据但是不会同步到页面上,vue不能检测
+            // 解决办法: 让数组等于空数据,只要不适用length都不影响
+
+        // 2. 使用数组的索引下标修改值,也不会同步到页面上,vue不能检测
+            // 解决办法: 使用splice(0,1,'1');
+            // 解决办法2: vue 有内置的强制响应方法:
+            // Vue.set(vm.items, indexOfItem, newValue) -- vue的内置方法都是以$开头
+        
+        var vm = new Vue({
+            el:'#app',
+            data:{
+                msg:[1,2,3,4,5]
+            },
+            methods:{
+                change(){
+                    // this.msg.length = 0
+                    // this.msg = []
+                    // this.msg[0] = 123;
+                    // this.msg.splice(0,1,123);
+                    // vm.set((要修改的数组),第几个元素,新值);
+                    this.$set(this.msg,0,123);
+                }
+            }
+        });
+    </script>
+</body>
+</html>

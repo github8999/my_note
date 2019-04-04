@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <my-com></my-com>
+    </div>
+
+    <script src="../vue.js"></script>
+    <script>
+        var vm = new Vue({
+            el:'#app',
+            components:{
+                // 定义组件
+                myCom:{
+                    template:'<div>{{msg}}</div>',
+                    data(){
+                        return {
+                            msg:'这是myCom组件'
+                        };
+                    }
+                }
+            }
+        });
+    </script>
+
+    <!-- <script>
+        var vm = new Vue({
+            el:'#app',
+            components:{
+                // 定义组件
+                myCom:{
+                    template:'<div>{{msg}}</div>',
+                    data(){
+                        return {
+                            msg:'这是myCom组件'
+                        };
+                    }
+                }
+            }
+        });
+    </script> -->
+
+    <!-- <script>
+        var vm= new Vue({
+            el:'#app',
+            components:{
+                // 定义组件
+                myCom:{
+                    template:'<div>{{msg}}</div>',
+                    data(){
+                        return {
+                            msg:'这是myCom组件'
+                        };
+                    }
+                }
+            }
+
+        })
+    </script> -->
+
+    <!-- <script>
+        var vm = new Vue({
+            el:'#app',
+            components:{
+                // 定义组件
+                myCom:{
+                    template:'<div>{{msg}}</div>'
+                    ,data(){
+                        return {
+                            msg:'这是myCom组件',
+                        };
+                    }
+                }
+            }
+        });
+    </script> -->
+
+    <!-- <script>
+        var vm = new Vue({
+            el:'#app',
+            components:{
+
+                // 定义myCom组件
+                myCom:{
+                    template:'<div>{{msg}}</div>',
+                    data(){
+                        return {
+                            msg:'这是我的myCom组件'
+                        };
+                    }
+                }
+            }
+        });
+    </script> -->
+</body>
+</html>

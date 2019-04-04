@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- 子组件中默认无法访问父组件中的 data中的数据 和 methods中的方法;   -->
+
+    <!-- 父组件可以在引用子组件的时候使用属性绑定的形式(v-bind:), -->
+    <!-- 把需要传递给子组件使用的数据,以属性绑定的形式,传递到子组件内部,供子组件使用; -->
+
+    <!-- 如果子组件想要使用父组件以属性绑定形式传递的数据,要在子组件的 props属性中 声明一下 -->
+
+    <!--  -->
+
+    <!-- props 这个 带s的 比较特殊是一个数组; -->
+
+    <div id="app">
+        <!-- 1.父组件向子组件传递pmsg属性，以属性绑定的形式 -->
+        <my-com v-bind:pmsg="msg"></my-com>
+    </div>
+    <script src="../vue.js"></script>
+    <script>
+    // 组件中 所有的 props 中的数据, 都是通过父组件传递给子组件的;
+    // props中的数据是只读的,可以通过修饰符来修改;
+
+    // 子组件中的data数据并不是通过父组件传递过来的,而是子组件自身私有的,
+    // 比如:子组件通过Ajax请求回来的数据,可以放到data中;
+    // data中的数据是可读可写的;
+    
+    // 注意: 如果要想使props中的属性值改变,
+    // 可以通过把该属性赋值给data中的变量来控制.
+        var vm = new Vue({
+            el:'#app',
+            data:{
+                msg:'这是#app中的数据'
+            },
+            components:{
+                myCom:{
+                    template:'<div @click="pmsgdata=1">{{ pmsgdata }}</div>',
+
+                    // 2.子组件使用父组件传递的属性使用,在props数组中定义;
+                    props:['pmsg'],
+                    data(){
+                        return {
+                            // 如果要修改属性的值,建议把该属性赋值给data中的变量
+                            pmsgdata: this.pmsg
+                        };
+                    },
+                    methods:{
+
+                    }
+                }
+            }
+        }); 
+    </script>
+</body>
+</html>

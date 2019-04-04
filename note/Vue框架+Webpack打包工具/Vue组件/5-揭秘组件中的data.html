@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <my-com></my-com>
+        <hr>
+        <my-com></my-com>
+        <hr>
+        <my-com></my-com>
+    </div>
+
+    <script src="../vue.js"></script>
+    <script>
+        
+        var countObj={count:0};
+        var vm = new Vue({
+            el:'#app',
+            components:{
+                // 定义一个组件myCom
+                myCom:{
+                    template:'<div @click="increment">{{count}}</div>',
+                    data(){
+
+                // --- 如果不每个返回一个对象,该模板复用的时候使用的是同一个对象,
+                // --- 因此,如果修改了一个模板中的数据,其他复用该模板的数据也会改变;
+
+                        return { 
+                            count:0
+                        };
+                        
+                        // 模拟不使用函数返回对象的data
+                        // return countObj; 
+                    },
+                    methods:{
+                        increment(){
+                            this.count++;
+                        }
+                    }
+                    
+                }
+            }
+        });
+    </script>
+</body>
+</html>

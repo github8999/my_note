@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <a href="javaScript:;" @click="login(1)">登录</a>
+        <a href="javaScript:;" @click="login(2)">注册</a>
+        <my-login v-if="isLogin==1"></my-login>
+        <my-regist v-else-if="isLogin == '2'"></my-regist>
+    </div>
+    <script src="../vue.js"></script>
+    <script>
+        var vm = new Vue({
+            el:'#app',
+            data:{
+                // 默认为登录
+                isLogin:'1'
+            },
+            methods:{
+                login(arg){
+                    this.isLogin = arg;
+                    console.log(arg)
+                }
+            },           
+            components:{
+                // 定义注册组件
+                myRegist:{
+                    template:'<div>注册组件</div>'
+
+                },
+                // 定义登录组件
+                myLogin:{
+                    template:'<div>登录组件</div>'
+                }
+
+            }
+        });
+    </script>
+</body>
+</html>

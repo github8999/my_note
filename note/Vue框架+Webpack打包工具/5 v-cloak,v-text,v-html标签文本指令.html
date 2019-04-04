@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        [v-cloak]{
+            display: none;
+        }
+    </style>
+    <script src="vue.js"></script>
+
+</head>
+<body>
+
+    <div id="app"> <!-- 注意: el控制的区域不能加到body或以上 -->
+        <!-- 当网络比较慢数据还没有获取到时,页面上会显示{{msg}} -->
+        <!-- 使用v-cloak,能够解决插值表达式的延迟闪烁问题 -->
+        <!-- 当页面加载完毕之后会删除标签的v-cloak属性 -->
+        <p v-cloak>{{ msg }}</p>
+        <p v-text="msg"></p>
+        <!-- v-text默认是没有闪烁问题的,
+            v-text会覆盖标签中原本的文本内容,v-cloak只会替换插值表达式
+            v-text和插值表达式都不会解析html标签,
+            v-html默认没有闪烁问题,且会覆盖内容会解析标签
+        -->
+
+
+    </div>
+    <script>
+        var vm = new Vue({
+            el:'#app',
+            data:{
+                msg:'XIXI'
+            }
+        });
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- 全局过滤器提供所有的Vue实例使用, 如果只定义当前Vue实例的过滤器,
+        则要在filters属性中定义,全局和私有过滤器重名时,会采用就近原则 -->
+    <div id="app">
+        <p>{{msg | teil }}</p>
+    </div>
+    <script src="vue.js"></script>
+    <script>
+        var vm = new Vue({
+            el:'#app',
+            data:{
+                msg : '我是一个p标签'
+            },  
+            filters:{ // 私有过滤器
+                teil(msgStr){
+                    return msgStr+',我是小尾巴^v^';
+                }
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="vue.js">
+    </script>
+</head>
+<body>
+    <div id="app">
+        <button @click="flag=!flag">toggle</button>
+
+        <!-- v-if的特点: 每次重新删除和添加元素 -->
+        <!-- v-show的特点：操作元素的display:none,不会删除和添加节点 -->
+
+        <!-- v-if 会消耗很大的切换性能 -->
+        <!-- v-show 有较高的初始渲染消耗 -->
+
+        <!-- 如果元素设计到频繁的切换,最好不要使用v-if,推荐使用v-show -->
+        <!-- 如果元素可能永远也不会显示出来被用户看到,则推荐是用v-if -->
+
+        <p v-if="flag">这是v-if控制的p标签</p>
+        <p v-show="flag">这是v-show控制的p标签</p>
+    </div>
+    <script>
+        var vm = new Vue({
+            el:'#app',
+            data:{
+                flag:true,    
+            },
+            methods:{
+                toggle() {
+                    this.flag = !this.flag;
+                }
+            }
+        })
+    </script>
+</body>
+</html>

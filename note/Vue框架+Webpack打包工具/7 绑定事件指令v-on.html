@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- 第一步,导入vue.js文件 -->
+    <script src="vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <!-- v-on:事件类型 指令用来绑定事件,属性值为js表达式 -->
+        <button v-on:click = "a">按钮</button>
+        <button @click = "a">按钮</button>
+
+    </div>
+    <script>
+        var vm = new Vue({
+            el:'#app',
+            data:{
+
+            },
+            methods:{ // methods属性中定义了当前vue实例所有可用的方法
+                a:function(){
+                    alert('123');
+                }
+            }
+        });
+    
+    </script>
+
+</body>
+</html>

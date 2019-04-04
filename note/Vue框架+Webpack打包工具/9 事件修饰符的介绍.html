@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.outer{
+			width: 100px;
+			height: 100px;
+			background-color: red;
+		}
+		.inner{
+			width: 50px;
+			height: 50px;
+			background-color: yellow;
+		}
+	</style>
+	<script src="vue.js"></script>
+</head>
+<body>
+	<div class="" id="app">
+		<button v-on:click.once="btn">点击触发事件</button>
+		<div class="outer" @click.self="btn">
+			<div class="inner" @click="btn"></div>
+		</div>
+	</div>
+
+	<script>
+		// .stop 阻止冒泡
+		// .prevent 阻止默认事件
+		// .capture	添加事件监听时,在捕获期执行;
+		// .self 事件只作用在该元素本身
+		// .once 事件只触发一次
+
+		// self和stop的区别 
+		// self是事件只作用在自己身上
+		// stop阻止冒泡并不会阻止子标签的冒泡,点击子标签仍会触发该标签的事件
+		var vm = new Vue({
+			el:'#app',
+			data:{},
+			methods:{
+				btn:function(){
+					alert(1);
+				}
+			}
+		});
+
+		
+	</script>
+</body>
+</html>
