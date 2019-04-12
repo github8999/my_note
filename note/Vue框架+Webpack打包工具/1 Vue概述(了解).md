@@ -1,6 +1,6 @@
 +   什么是Vue.js
     ```
-        - 目前最主流的两个框架之一,另一个是React(Vue也进行手机app开发需要借助于weex);
+        - 目前最主流的两个框架之一,另一个是React(Vue也进行手机app开发需要借助于vuex);
 
         - Vue.js是前端主流框架之一,于Angular.js 和React.js一起并称为前端三大主流框架;
 

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <!-- 阿萨德 -->
+        <!-- html中不区分大小写,无论是大 写还是小写一律会转为小写 -->
+        <!-- <my-com :msgProp="msg"></my-com> -->
+
+        <my-com :msgprop="msg" ></my-com>
+    </div>
+    <script src="../vue.js"></script>
+    <script>
+        var vm = new Vue({
+            el:'#app',
+            data:{
+                msg:'这是父级组件中的msg',
+            },
+            components:{
+                myCom:{
+                    template:'<div>{{msg}}---{{msgprop}}---{{name}}</div>',
+                    // props:['msgprop'],
+                    props:{
+                        // 为了提供prop的验证方式,props可以指向一个对象而不是数组.
+                        // 注意事项: prop 会在vue实例创建(beforeCreate) 之前验证,
+                        // 所以实例的属性(如data,computed等),在default和validator
+                        // 1. msgprop ,定义该属性为String 
+                        // 速度
+                        // 2. 定义msgprop,为String 和 Number类型
+                        // msgprop:[Number,String]
+                        
+                        // 3. 定义父级组件定义msgprop属性必须传一个字符串
+                        // msgprop:{
+                        //     type:String,
+                        //     required:true
+                        // }
+                        msgprop:{
+                            type:String,
+                        },
+                        // 如果在父级组件中 没有定义name属性,则prop中定义的name可以使用default设置一个默认值
+                        name:{
+                            type:String,
+                            default: '不凡学院'
+                        }
+                        // msgprop:Number
+                    },
+                    data(){
+                        return {
+                            msg:'这是子组件中的msg',
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
