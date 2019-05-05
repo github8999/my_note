@@ -97,35 +97,7 @@
 ### 组件中的data为什么是一个方法返回一个对象
 
 1. 通过方法返回一个对象来保证复用模板的时候用的不是同一个对象
-```
-    var countObj={count:0};
-    var vm = new Vue({
-        el:'#app',
-        components:{
-            
-            // 定义一个组件myCom
-            myCom:{
-                template:'<div @click="increment">{{count}}</div>',
-                data(){
-                
-                    // --- 如果不每个返回一个对象,该模板复用的时候使用的是同一个对象,
-                    // --- 因此,如果修改了一个模板中的数据,其他复用该模板的数据也会改变;
-                    return { 
-                        count:0
-                    };
-                    
-                    // 模拟不使用函数返回对象的data
-                    // return countObj; 
-                },
-                methods:{
-                    increment(){
-                        this.count++;
-                    }
-                }
-            }
-        }
-    });
-```
+
 ### v-if与v-else切换组件
 
 ---
@@ -230,37 +202,4 @@
 步骤1: 在html标签或组件标签上加上 ref="名称"
 
 步骤2: 在vue实例中,通过this.$refs.名称 获取dom节点 或 组件对象
-
---- 
-##  表单应用
-
-### 类型修饰符
-
-1. 表单中的值一般都为String类型, 如果需要通过v-model 同步到 前端model层中的数据类型为可计算的Number类型,可以使用.number进行修饰;
-```
-    -----------------------------
-    html页面标签: ==>
-    -----------------------------
-    <input v-model.number="param">
-
-    ------------------------------
-    js代码部分: ==>
-    ------------------------------
-    new Vue({
-        el:'#app',
-        data:{
-            param = 0,  ==> 此时,从页面同步到data中的数据为number类型 
-        }
-    });
-```
-
-### 表单注意事项
-
-1. 通过 Ajax 可以不使用name属性就可以提交, v-model相同的可以看为一组。(原理是value和v-model的关系)
-
-2. 下拉列表的value值,是该下拉列表中options的value值, 一般把v-model绑定给select
-
-3. 使用display:none隐藏,然后让该option为选中项,值仍然会显示在下拉框中,但是下拉列表中是隐藏的;
-
-4. 如果提交为disabled的标签, 当作默认选项提交, 不会提交数据即url?后啥都没有;
 

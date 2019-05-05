@@ -1,4 +1,3 @@
-
 ##  vue常用的指令
 
 +   **v-cloak,v-html,v-text 处理文本指令**
@@ -104,8 +103,6 @@
 +   **v-model**
 
     1. **v-model ,** 会把value中的数据同步到model层数据中, 只会表单中的标签生效;
-
-    2. **注意:** v-model绑定表单标签的时候,value 不能使用model中的数据(存在疑问)
 ---
 +   **v-bind:应用多个class**
 

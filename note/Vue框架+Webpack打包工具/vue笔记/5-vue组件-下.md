@@ -21,18 +21,7 @@
     <my-com>
     插槽内容: 可以是文本, 标签, 甚至是组件
     </my-com>
-    ------
-    <script>
-        var myCom = {
-            template:'<div></div>'
-        }
-        new Vue({
-            el:'#app',
-            components:{
-                // 注册组件
-                myCom
-            }
-        })
+
 ```
 
 ### <span id="1-1">1-1 编译作用域</span>
