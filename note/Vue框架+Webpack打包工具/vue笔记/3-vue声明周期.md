@@ -13,7 +13,7 @@
         
         a) beforeCreate :表示刚初始化了一个空的实例,身上只有一些默认的事件和生命周期函数, 其他的属性和方法都未创建; ( 在beforeCreate生命周期 函数执行的时候, data 和 methods 中的 数据 都还没有初始化 )
 
-        b) created :这个时候data和methods中的数据已经初始化完毕, 如果要使用data和methodd中的数据最早只能在create中操作;
+        b) created :这个时候data和methods中的数据已经初始化完毕, 如果要使用data和methods中的数据最早只能在create中操作;
 
         c) beforeMount :这里表示已经把 #app模板 编译完成了 但是尚未渲染到页面中; 此时输出dom节点中的数据仍为 mustache插值;
 
