@@ -52,7 +52,8 @@
 +  clientX、clientY: 相对于浏览器视口的(0,0) 的偏移, 不会因为滚动条的改变而改变
 
 +  pageX、pageY: 相对于页面的(0,0)坐标的偏移量不兼容IE8; 
-    - 兼容格式: `event.clientX - 兼容后的scrollLeft`; 
+    - 兼容格式: `event.clientX + 兼容后的scrollLeft`(若html或body有边框还要加上边框的高度); 
+    
 
 ##  获取视口的宽高
 
