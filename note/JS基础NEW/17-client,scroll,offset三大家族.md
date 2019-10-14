@@ -17,7 +17,7 @@
 
 + offsetParent
 
-    1. 获取元素基于某个父级元素做相对定位的元素, 返回值是一个DOM元素
+    1. 获取元素基于某个父级元素(设为相对定位的父元素), 返回值是一个DOM元素
 
 + offsetWidth, offsetHeight
 
